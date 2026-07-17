@@ -1,259 +1,169 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jamaica Curry</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Jamaica Curry</title>
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-crossorigin="anonymous">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
-
+    <!-- Bootstrap 5 CSS Framework -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- FontAwesome for Icon Badges -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Custom CSS Connection -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="custom-navbar" style="background-color: #212529; padding: 15px 0; width: 100%; box-sizing: border-box; display: block; clear: both; border-bottom: 2px solid #333;">
+        <div class="nav-container" style="max-width: 1140px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+            
+            <!-- Logo Section -->
+            <a href="#" style="color: #ffc107; font-weight: bold; font-size: 1.4rem; text-decoration: none; font-family: Arial, sans-serif;">
+                Jamaica Curry
+            </a>
+            
+            <!-- Links Section -->
+            <ul style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; flex-direction: row; align-items: center;">
+                <li style="display: inline-block;"><a href="#" style="color: #ffffff; text-decoration: none; font-size: 1.05rem; font-family: Arial, sans-serif; font-weight: bold;">Home</a></li>
+                <li style="display: inline-block;"><a href="#about" style="color: #cccccc; text-decoration: none; font-size: 1.05rem; font-family: Arial, sans-serif;">About</a></li>
+                <li style="display: inline-block;"><a href="#products" style="color: #cccccc; text-decoration: none; font-size: 1.05rem; font-family: Arial, sans-serif;">Products</a></li>
+                <li style="display: inline-block;"><a href="#contact" style="color: #cccccc; text-decoration: none; font-size: 1.05rem; font-family: Arial, sans-serif;">Contact</a></li>
+            </ul>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        </div>
+    </nav>
 
-<div class="container">
+    <!-- Hero Banner -->
+    <header class="hero" style="background: #212529 url('background.png') no-repeat center center; background-size: cover; height: 60vh; display: flex; justify-content: center; align-items: center; position: relative; border-bottom: 4px solid #000000; overflow: hidden;">
+        
+        <!-- Dark shader overlay to make the white text pop out nicely -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.55); z-index: 1;"></div>
+        
+        <!-- Content Area Container (Forces text to layer cleanly on top of shader) -->
+        <div class="hero-container" style="position: relative; z-index: 2; text-align: center; padding: 0 20px;">
+            <h1 class="display-3" style="color: #ffffff !important; font-size: 3.5rem; font-weight: bold; font-family: Arial, sans-serif; margin: 0 0 10px 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.85);">
+                Authentic Jamaica Curry Corner
+            </h1>
+            <p class="lead" style="color: #ffc107 !important; font-size: 1.35rem; font-weight: bold; font-family: Arial, sans-serif; margin: 0 0 25px 0; text-shadow: 1px 1px 4px rgba(0,0,0,0.85);">
+                Bringing Caribbean Flavour To Your Kitchen
+            </p>
+            <a href="history.html" class="btn btn-warning btn-lg" style="background-color: #ffd700; color: #000000; font-weight: bold; font-size: 1.1rem; border: 3px solid #000000; border-radius: 8px; padding: 12px 28px; text-decoration: none; display: inline-block; box-shadow: 0 4px 0 #b8860b;">
+                Learn More
+            </a>
+        </div>
+    </header>
 
-<a class="navbar-brand fw-bold" href="#">
 
-Jamaica Curry
+    <!-- About Section -->
+    <section id="about" class="container py-5" style="padding: 50px 20px; text-align: left; background-color: #e8f5e9;">
+        <!-- Clean Flex Row Wrapper for explicit layout separation -->
+        <div class="about-row-wrapper" style="display: block; width: 100%; font-size: 0; clear: both;">
+            
+            <!-- Left Side Column Container: Holds the Image cleanly -->
+            <div class="about-column" style="display: inline-block; width: 48%; vertical-align: middle; margin-right: 4%; font-size: 1rem; box-sizing: border-box;">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" 
+                     class="img-fluid rounded shadow" 
+                     alt="Curry Platter" 
+                     style="width: 100%; height: auto; display: block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+            </div>
+            
+            <!-- Right Side Column Container: Holds the Text descriptions separately -->
+            <div class="about-column" style="display: inline-block; width: 48%; vertical-align: middle; font-size: 1rem; box-sizing: border-box; color: #212529;">
+                <h2 class="fw-bold" style="font-weight: bold; margin-top: 0; margin-bottom: 15px; font-size: 2rem;">About Jamaica Curry</h2>
+                <p class="text-muted leading-relaxed" style="color: #495057; line-height: 1.6; font-size: 1.1rem; margin: 0;">
+                    Jamaican curry is one of the island's most famous seasonings. 
+                    It combines turmeric, coriander, cumin and other spices to 
+                    create a rich flavour perfect for chicken, goat, seafood and vegetables.
+                </p>
+            </div>
 
-</a>
+     
+        </div>
+    </section>
 
-<button
-class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
 
-<span class="navbar-toggler-icon"></span>
+    <!-- Products: Dynamic Food Tabs + New Side Servings Column Menu -->
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">Popular Dishes & Sides</h2>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Left Side Area: Main Interactive Dish Display Tabs -->
+            <div class="col-12 col-md-8 col-lg-7">
+                <div class="d-flex justify-content-center gap-2 mb-4">
+                    <button class="btn btn-warning fw-bold text-dark px-3" onclick="changeDish('Curry Chicken', 'Tender chicken cooked in authentic Jamaican curry.', 'curry-chicken.png')">Curry Chicken</button>
+                    <button class="btn btn-warning fw-bold text-dark px-3" onclick="changeDish('Curry Goat',   'A favourite Jamaican Sunday dinner.', 'curry-goat.png')">Curry Goat</button>
+                    <button class="btn btn-warning fw-bold text-dark px-3" onclick="changeDish('Curry Shrimp', 'Freshly seasoned with Caribbean spices.', 'curry-shrimp.png')">Curry Shrimp</button>
+                </div>
+                
+                <div id="dishCard" class="card dynamic-card text-white text-center shadow-lg">
+                    <div class="dynamic-overlay d-flex flex-column justify-content-center align-items-center p-5">
+                        <h3 id="dishTitle" class="display-6 fw-bold mb-3">Curry Chicken</h3>
+                        <p id="dishText" class="lead text-light">Tender chicken cooked in authentic Jamaican curry.</p>
+                    </div>
+                </div>
+            </div>
 
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-
-<a class="nav-link active" href="#">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#about">About</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#products">Products</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#contact">Contact</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</nav>
-
-<!-- Hero -->
-
-<header class="hero">
-
-<div class="container text-center text-white">
-
-<h1 class="display-3">
-
-Authentic Jamaica Curry
-
-</h1>
-
-<p class="lead">
-
-Bringing Caribbean Flavour To Your Kitchen
-
-</p>
-
-<button
-class="btn btn-warning btn-lg"
-onclick="showMessage()">
-
-Learn More
-
-</button>
-
-</div>
-
-</header>
-
-<!-- About -->
-
-<section id="about" class="container py-5">
-
-<div class="row align-items-center">
-
-<div class="col-md-6">
-
-<img
-src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80"
-class="img-fluid rounded shadow"
-alt="Curry">
-
-</div>
-
-<div class="col-md-6">
-
-<h2>
-
-About Jamaica Curry
-
-</h2>
-
-<p>
-
-Jamaican curry is one of the island's most famous seasonings.
-It combines turmeric, coriander, cumin and other spices to
-create a rich flavour perfect for chicken, goat, seafood and vegetables.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Products -->
-<section id="products" class="container py-5">
-    <h2 class="text-center mb-4">Popular Dishes</h2>
-
-    <!-- Tab Navigation Buttons -->
-    <div class="d-flex justify-content-center gap-2 mb-4">
-        <button class="btn btn-warning fw-bold text-dark" onclick="changeDish('Curry Chicken', 'Tender chicken cooked in authentic Jamaican curry.', 'curry-chicken.png')">Curry Chicken</button>
-        <button class="btn btn-warning fw-bold text-dark" onclick="changeDish('Curry Goat', 'A favourite Jamaican Sunday dinner.', 'curry-goat.png')">Curry Goat</button>
-        <button class="btn btn-warning fw-bold text-dark" onclick="changeDish('Curry Shrimp', 'Freshly seasoned with Caribbean spices.', 'curry-shrimp.png')">Curry Shrimp</button>
-    </div>
-
-    <!-- Dynamic Display Card Area -->
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-            <div id="dishCard" class="card dynamic-card text-white text-center shadow-lg">
-                <div class="dynamic-overlay d-flex flex-column justify-content-center align-items-center p-5">
-                    <h3 id="dishTitle" class="display-6 fw-bold mb-3">Curry Chicken</h3>
-                    <p id="dishText" class="lead text-light">Tender chicken cooked in authentic Jamaican curry.</p>
+            <!-- Right Side Area: FIXED SIDE SERVINGS MENU PANEL -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100 shadow border-2 border-dark rounded-3">
+                    <div class="card-header bg-dark text-warning fw-bold text-center py-3 fs-5">
+                        <i class="fa-solid fa-bowl-rice me-2"></i>Side Servings Option
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3 fw-bold text-dark"><i class="fa-solid fa-circle-check text-success me-2"></i>White Rice / Rice & Peas</li>
+                        <li class="list-group-item py-3 fw-bold text-dark"><i class="fa-solid fa-circle-check text-success me-2"></i>Fluffy Roti</li>
+                        <li class="list-group-item py-3 fw-bold text-dark">
+                            <i class="fa-solid fa-circle-check text-success me-2"></i>Boiled Food:
+                            <span class="text-muted d-block small fw-normal ps-4 mt-1">Dumplings, Yellow Yam, or Green Banana</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+       <!-- Contact Form with Validation Rules & Success Alerts Area -->
+    <section id="contact" class="container py-5" style="max-width: 650px;">
+        <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+        
+        <!-- Interactive Alert Notification Target Element -->
+        <div id="formAlert"></div>
 
+        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <!-- FIXED: Added inquiry selection dropdown choice box -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">How can we help you?</label>
+                <select id="formReason" class="form-select border-2 border-secondary" required>
+                    <option value="" disabled selected>-- Select an option --</option>
+                    <option value="Enquiry">Contact Us for Enquiries</option>
+                    <option value="Order">Place an Order</option>
+                </select>
+            </div>
 
-</section>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Name</label>
+                <input type="text" id="formName" class="form-control border-2 border-secondary" required placeholder="Enter full name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Email Address</label>
+                <input type="email" id="formEmail" class="form-control border-2 border-secondary" required placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Message</label>
+                <textarea id="formMessage" class="form-control border-2 border-secondary" rows="4" required placeholder="Type details here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100 fw-bold py-2 shadow-sm border border-dark">Submit Form</button>
+        </form>
 
+    </section>
 
-<!-- Contact -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        © 2026 Jamaica Curry
+    </footer>
 
-<section id="contact" class="container py-5">
-
-<h2>
-
-Contact Us
-
-</h2>
-
-<form>
-
-<div class="mb-3">
-
-<label class="form-label">
-
-Name
-
-</label>
-
-<input
-type="text"
-class="form-control">
-
-</div>
-
-<div class="mb-3">
-
-<label class="form-label">
-
-Email
-
-</label>
-
-<input
-type="email"
-class="form-control">
-
-</div>
-
-<div class="mb-3">
-
-<label class="form-label">
-
-Message
-
-</label>
-
-<textarea
-class="form-control"
-rows="4"></textarea>
-
-</div>
-
-<button class="btn btn-success">
-
-Submit
-
-</button>
-
-</form>
-
-</section>
-
-<footer class="bg-dark text-white text-center p-3">
-
-© 2026 Jamaica Curry
-
-</footer>
-
-<!-- Bootstrap JavaScript -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-crossorigin="anonymous"></script>
-
-<script src="script.js"></script>
-
+    <!-- Bootstrap 5 Bundle JS Script Engine Link -->
+    <script src="https://jsdelivr.net"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
